@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <name>PUBGFriendTracker</name>
+
+    <description>
+
+    </description>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>PUBGApps</groupId>
+    <artifactId>PUBGFriendTracker</artifactId>
+    <packaging>pom</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <organization>
+        <name>ScarySpider</name>
+
+    </organization>
+
+    <!-- basic info capture for now, is fodder for site docs generation.  embiggen later -->
+    <developers>
+        <developer>
+            <name>ScarySpider</name>
+        </developer>
+
+    </developers>
+
+    <!-- -->
+    <modules>
+        <module>PUBGFriendsTracker</module>
+    </modules>
+
+    <properties>
+        <!-- explicitly set build encoding so not altered by build platform defaults -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <!--
+    TO BE RE-INCORPORATED AS DEVELOPMENT PROGRESSES
+
+    <scm>
+    <distributionManagement>
+    <profiles>  what?  demo/restricted, debug/release, other - do we really plan on Jenkins?
+
+    -->
+
+</project>
