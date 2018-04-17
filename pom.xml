@@ -3,7 +3,8 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-    <name>PUBGFriendTracker</name>
+    <name>PUBG Friend Tracker</name>
+
 
     <description>
 
@@ -11,27 +12,24 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>PUBGApps</groupId>
-    <artifactId>PUBGFriendTracker</artifactId>
+    <groupId>com.company</groupId>
+    <artifactId>PUBGFT</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
 
     <organization>
-        <name>ScarySpider</name>
 
     </organization>
 
     <!-- basic info capture for now, is fodder for site docs generation.  embiggen later -->
     <developers>
-        <developer>
-            <name>ScarySpider</name>
-        </developer>
 
     </developers>
 
     <!-- -->
     <modules>
-        <module>PUBGFriendsTracker</module>
+
+
     </modules>
 
     <properties>
@@ -39,13 +37,38 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <!--
-    TO BE RE-INCORPORATED AS DEVELOPMENT PROGRESSES
+    <dependencies>
+        <dependency>
+            <groupId>org.glassfish.jersey.core</groupId>
+            <artifactId>jersey-client</artifactId>
+            <version>2.26-b08</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.core</groupId>
+            <artifactId>jersey-common</artifactId>
+            <version>2.26-b08</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.containers</groupId>
+            <artifactId>jersey-container-servlet</artifactId>
+            <version>2.26-b06</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.inject</groupId>
+            <artifactId>jersey-hk2</artifactId>
+            <version>2.26-b06</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>1.9.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.media</groupId>
+            <artifactId>jersey-media-json-jackson</artifactId>
+            <version>2.23.1</version>
+        </dependency>
+    </dependencies>
 
-    <scm>
-    <distributionManagement>
-    <profiles>  what?  demo/restricted, debug/release, other - do we really plan on Jenkins?
-
-    -->
 
 </project>
